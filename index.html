@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/510db4481c5434cfce80f9fcbdb838c1.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        
+        <div class="todo-form">
+            <div class="form-group">
+                <label for="todo-title">Aktivitas Hari Ini</label>
+                <input type="text" id="todo-title" placeholder="Apa aktivitas anda hari ini?">
+            </div>
+            <div class="form-group">
+                <label for="todo-date">Tanggal</label>
+                <input type="date" id="todo-date">
+            </div>
+            <button id="add-todo">Tambah To-Do</button>
+        </div>
+        
+        <div class="todo-list">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="active">Aktivitas</button>
+                <button class="filter-btn" data-filter="completed">Selesai Aktivitas</button>
+            </div>
+            
+            <div id="todo-items">
+                <!-- Item yang harus dilakukan akan ditambahkan di sini secara dinamis -->
+                <div class="empty-state">Tidak ada list aktivitas. Tambahkan aktivitas baru!</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
