@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
                 
                 if (filteredTodos.length === 0) {
-                    todoItemsContainer.innerHTML = '<div class="empty-state">Tidak ada aktivitas list. Tambahkan aktivitas baru!</div>';
+                    todoItemsContainer.innerHTML = '<div class="empty-state">Tidak ada aktivitas hari ini. Tambahkan aktivitas baru!</div>';
                     return;
                 }
                 
